@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    #btn{
+        width: 50px;
+        height: 50px;
+        border-style: none;
+        outline-style: none;
+        border-radius: 30px;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 10px lightgrey;
+        position: relative;
+
+    }
+
+    .color{
+        margin-left:8px;
+        margin-top:8px;
+        display:none;
+        width: 35px;
+        height: 35px;
+        border-radius: 20px;
+        border-style: none;
+        outline-style: none;
+        background: black;
+    }
+
+    #c1{background-color:#5D732D;}
+    #c2{background-color:#B2BF50;}
+    #c3{background-color:#F2D7D0;}
+    #c4{background-color:#D96C6C;}
+
+   
+
+    #container{
+        margin: 20px;
+    }
+    .ta{
+        width: 260px;
+        height: 230px;
+        
+        border: none;
+        overflow: auto;
+        outline: none;
+        padding: 20px;
+        margin:10px;
+        margin-top:0px;
+        box-shadow: 5px 5px 10px rgb(211, 211, 211);
+    }
+
+    /* inner element*/
+
+    .wrapp{
+        display: inline-block;
+    }
+
+    .innerdiv{
+            margin: 10px;
+            margin-bottom:0px;
+            width: 300px;
+            height: 30px;
+            background-color:#F2D8A7;
+            
+            
+        }
+        .innerbtn{
+            background-color:#ffffff;
+            color: #59403B;
+            border-style: none;
+            border-radius: 3px;
+            display:inline;
+            
+            
+        }
+        .innerbtn:hover{
+            background-color: black;
+            color: #ffffff;
+            
+        }
+
+
+
+ 
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    let flag = true;
+$(document).ready(function(){
+  $("#btn").click(function(){
+      if(flag == true){
+        $("#btn").animate({width: "200px"});
+        $(".color").fadeIn();
+        flag = !flag;   
+      }else{
+        $("#btn").animate({width: "50px"});
+        $(".color").fadeOut();
+        flag = !flag;
+    }
+  });
+
+  
+
+  
+});
+
+function createMemo(bgColor){
+    const memodiv = document.getElementById("memoDiv");
+
+    let wrapp = document.createElement("div");
+        wrapp.className = "wrapp";
+
+    let form = document.createElement("form");
+    form.method="post";
+        form.id = "m_form";
+        form.action ="/index.html";
+
+    let memo = document.createElement("textarea");
+        memo.className = "ta"; 
+        memo.style.background= bgColor;
+
+    //버튼이 들어갈 div 태그 
+    let innerdiv = document.createElement("div");
+        innerdiv.className = "innerdiv"; 
+        
+    wrapp.appendChild(form);
+        
+    //button 생성 함수 호출
+    createBtn(innerdiv);
+    memodiv.appendChild(wrapp);
+    form.appendChild(innerdiv);
+    form.appendChild(memo);  
+  
+}
+
+function createBtn(innerdiv){
+    
+    // save버튼 생성하기 
+    let savebtn = document.createElement("button");
+        savebtn.type = "submit";
+        savebtn.className = "innerbtn";
+        savebtn.textContent="s";
+        savebtn.style.margin="6px 5px 0 250px";
+        innerdiv.appendChild(savebtn);
+
+        //$(savebtn).removeAttr('onclick');
+        //$(savebtn).attr('onclick','save(this);');
+
+    // delete버튼 생성하기 
+        let delbtn = document.createElement("button");
+        delbtn.className = "innerbtn del";
+        
+        delbtn.textContent = "x";
+        innerdiv.appendChild(delbtn);
+
+        delbtn.addEventListener('click',function(){
+
+            let test = $(this).parents('.wrapp').remove();
+            console.log(test);
+            
+        })
+
+       
+
+      
+}
+function save(obj){
+    
+
+    let ta = obj.parentNode.parentNode.childNodes[1];
+    console.log(ta.value);
+    console.log(ta.style.background);
+    
+}
+
+
+
+
+
+</script>
+</head>
+<body>
+
+
+<div id="btn">
+    <button class="color" id="c1" onclick="createMemo(this.value)" value="#5D732D"></button>
+    <button class="color" id="c2" onclick="createMemo(this.value)" value="#B2BF50"></button>
+    <button class="color" id="c3" onclick="createMemo(this.value)" value="#F2D7D0"></button>
+    <button class="color" id="c4" onclick="createMemo(this.value)" value="#D96C6C"></button>
+</div>
+
+<div id="container">
+    <div id="memoDiv">
+    </div>
+</div>
+
+</body>
+</html>
