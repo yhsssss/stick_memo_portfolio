@@ -1,0 +1,18 @@
+{
+  "name": "web-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "confirm": "^0.1.1",
+    "confirm-dialog": "^0.1.2",
+    "mysql": "^2.18.1",
+    "prompt": "^1.1.0",
+    "url-parse": "^1.5.1"
+  }
+}

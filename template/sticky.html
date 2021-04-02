@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin: 40px;
+        }
+        .btndiv{
+            margin-top: 20px;
+            width: 280px;
+            height: 40px;
+            background-color: rgb(221, 178, 129);
+
+        }
+        .btn{
+            background-color:rgb(241, 195, 95);
+            border-style: none;
+            border-radius: 10px;
+        }
+        .btn:hover{
+            background-color: black;
+            color: white;
+            
+        }
+
+        .memodiv{
+            margin-top: 0px;
+            width: 280px;
+            height: 240px;
+            background-color: rgb(241, 224, 124);
+            
+        }
+        .textarea{
+            margin-left: 35px;
+            margin-top:20px;
+            width: 200px;
+            height: 200px;
+        }
+      
+    </style>
+    
+</head>
+<body>
+    
+    <button id="newbtn" class="btn">+</button>
+    <div id="memo"></div>
+    <script>
+        let count = 0;
+        let newbtn = document.getElementById("newbtn");
+        let meno = document.getElementById("memo");
+        
+
+
+        let savebtn = document.getElementById("save");
+        
+        newbtn.addEventListener('click',()=>{
+            count ++;
+            //버튼이 들어갈 div 태그 
+            let btndiv = document.createElement("div");
+            btndiv.className = "btndiv";
+            meno.appendChild(btndiv);
+                // save버튼 생성하기 
+                let savebtn = document.createElement("button");
+                savebtn.className = "btn";
+                savebtn.textContent="s";
+                savebtn.style.margin="10px 0 0 240px";
+                btndiv.appendChild(savebtn);
+
+            //메모가 들어갈 div 태그
+            let div = document.createElement("div");
+            div.className = "memodiv" ; 
+            meno.appendChild(div);
+                
+                //textarea 생성하기 
+                let text = document.createElement("textarea");
+                text.id= "textarea" + count;
+                text.className="textarea";
+                text.textContent="memo here";
+                
+                div.appendChild(text);
+
+                
+              
+                
+        });
+
+        function save(){
+
+            console.log("ddddddddddddd");
+
+        }
+
+ 
+
+        function a(){
+            alert("a에 들어옴");
+        let textArea = document.querySelector(".textarea");
+        
+
+        textArea.addEventListener("focus",(event)=>{
+            alert(event.target.id);
+                savebtn.addEventListener('click',(event)=>{
+                    document.querySelector(".memodiv").innerHTML = event.tex.value; 
+                    text.remove();
+
+            });
+            
+            });
+        
+
+        }
+            
+      
+        
+    </script>
+</body>
+</html>

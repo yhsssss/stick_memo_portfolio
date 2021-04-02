@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글쓰기</title>
+</head>
+<style>
+    form input[type=submit]{
+        margin: auto;
+    }
+    header{
+        width: 80%;
+       
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    header h1{
+        font-size: 3em;
+        color: rgb(65, 65, 65);
+    }
+   
+    #wrapp{
+        margin: auto;
+        width: 50%;
+        height: 500px;
+        padding-left:10px;
+        padding-right: 10px;
+        
+
+    }
+ 
+    #wrapp input[type=text]{
+        margin: auto;
+        width: 100%;
+        height: 35px;
+        margin-top: 10px;
+        border:none;
+        border-bottom: 1px solid rgb(36, 36, 36);
+    }
+   
+    #wrapp input[type=text]::placeholder{color: rgb(201, 201, 201);
+    font-size: 20px;}
+    
+    #wrapp textarea{
+        margin: auto;
+        width: 100%;
+        margin-top: 15px;
+        border-radius: 1px;
+    }
+    #wrapp input[type=password]{
+        width:20%;
+    }
+    #wrapp input[type=submit]{
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+        margin-right: 0;
+        margin-left: auto;
+        border-radius: none;
+        font-size: 80%;
+        
+    }
+  
+  
+
+
+</style>
+<body>
+    <header>
+        <h1>New</h1>
+    </header>
+    <form action= "http://localhost:8660/?id=writeLayout.html" method="post">
+       <div id="wrapp">
+       
+           <div id="wrapp-title">
+            <input type="text" name="title" placeholder="제목">
+           </div>
+           <div id="wapper-description">
+            <textarea name="description" cols="50" rows="25"
+            ></textarea>
+           </div>    
+            <input type="password" name="pw" placeholder="●●●●">
+           <input type="submit" value="저장">
+       </div>
+    </form>
+    
+</body>
+</html>

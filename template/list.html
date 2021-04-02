@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        h1{
+            font-size: 3em;
+        }
+        
+        #list{
+            position: fixed;
+            z-index: 10;
+            margin-top: 0px;
+            margin-right:0px;
+            width: 250px;
+            height:100%;
+            background-color: antiquewhite;
+            
+        }
+        #list ul{
+            height:100%; width:150px;
+            list-style: none;
+            overflow:hidden; overflow-y:scroll;
+            
+
+        }
+        #list a{
+           
+            padding: 30px 30px 30px 80px;
+            text-decoration: none;
+            font-size: 1.5em;
+            color: rgb(31, 30, 30);
+        }
+        #post-table{
+            width: 60%;
+            margin-top: 0;
+            margin-left: 250px;
+            background-color: aqua;
+        }
+        
+        table, th, td {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            text-align: left;    
+}
+    </style>
+</head>
+<body>
+
+    <div id="list">
+        
+            <a href="#"> blog </a>
+            <a href="#"> memo </a>
+            <a href="#"> photo</a>
+            <a href="#"> post </a>
+        
+         
+        
+    </div>
+    
+    
+    <div id="post-table">
+        <h1>post</h1>
+        <table style="width:100%">
+            <tr>
+                <th style="width:80%">post</th>
+                <th colspan="2">writer</th>
+            </tr>
+            <tr>
+                <td>Bill Gates</td>
+                <td>55577854</td>
+                <td>55577855</td>
+            </tr>
+            <tr>
+                <td>Bill Gates</td>
+                <td>55577854</td>
+                <td>55577855</td>
+            </tr>
+            <tr>
+                <td>Bill Gates</td>
+                <td>55577854</td>
+                <td>55577855</td>
+            </tr>
+            <tr>
+                <td>Bill Gates</td>
+                <td>55577854</td>
+                <td>55577855</td>
+            </tr>
+       </table>
+    
+    </div>
+
+</body>
+</html>
