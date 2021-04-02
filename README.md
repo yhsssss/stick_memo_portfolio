@@ -13,12 +13,15 @@
 - **심플보드** 게시판에서는 
 
 ## Getting Started
+
+### step #1 - Install the Dependencies
 ```
 npm install
 ```
+### step #2 - Install the Dependencies
 
-
-스티커메모 / 게시판 따로 사진 gif 하기 
-
-
-localhost:8660 명시 
+Node.js 설치 
+```
+npm start
+```
+`localhost:8660`에서 구동됩니다  
