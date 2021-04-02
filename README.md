@@ -14,14 +14,33 @@
 
 ## Getting Started
 
-### step #1 - Install the Dependencies
+### :clap: step #1 - Install the Dependencies
 ```
 npm install
 ```
-### step #2 - Install the Dependencies
 
-Node.js 설치 
+### :clap: step #2 - Database
+`mySQL` 설치 후 `/sql/db_info.sql` 실행
+`/lib/db.js` DB정보 확인하기
+
+```
+ let db = mysql.createConnection({
+          host : 'localhost',
+          user : '정보입력',
+          password : '비밀번호 입력',
+          database : 'myboard'
+ }); 
+```
+
+### :clap: step #3 - Start the Development Server
+
+Node.js 설치후 버전 확인하기
+```
+node --version
+```
+
+서버 구동하기 `http://localhost:8660`에서 구동됩니다
 ```
 npm start
 ```
-`localhost:8660`에서 구동됩니다  
+  
