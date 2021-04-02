@@ -16,3 +16,9 @@
 ```
 npm install
 ```
+
+
+스티커메모 / 게시판 따로 사진 gif 하기 
+
+
+localhost:8660 명시 
