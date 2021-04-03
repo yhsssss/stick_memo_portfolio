@@ -23,9 +23,7 @@
    
       
 ---- 
-   
-![simple-board-1](https://user-images.githubusercontent.com/52145267/113465401-9c07c380-946e-11eb-8a59-6653ee507ca9.gif)   
-   
+
 ### Simple Board(게시판)  
 - 게시판에서 자유롭게 글을 쓰고 수정할 수 있습니다. 검색을 통해 원하는 게시물을 찾을 수 있습니다
    
@@ -35,6 +33,10 @@
 | 생성 | 게시물을 쓰고 저장할 수 있습니다. 연결된 DB에 게시물이 저장됩니다 |
 | 관리 | `[수정 - 변경 - 삭제]` 할 수 있습니다. 게시물의 id값을 받아 변경을 처리합니다. 글을 누를때마다 조회수가 Update됩니다 |
 | 검색 | 검색어를 입력해 게시물을 찾을 수 있습니다. 검색어는 저장된 DB의 게시물들의 제목을 참조합니다 |
+
+![simple-board-1](https://user-images.githubusercontent.com/52145267/113465401-9c07c380-946e-11eb-8a59-6653ee507ca9.gif)   
+   
+
 
 ## Getting Started
 
