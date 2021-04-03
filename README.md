@@ -1,11 +1,14 @@
 
 # :rocket: Portfolio 
-:white_check_mark: **Sticky 바로가기** [Live Site Here](http://54.180.104.203:8888/planty) :arrow_right:  
+**Sticky Memo & Simple Board**   
+   
+   
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-FFCC33?style=flat-square&logo=JavaScript&logoColor=black"/> <img src="https://img.shields.io/badge/MySQL-025E8C?style=flat-square&logo=MySQL&logoColor=white"/>
 
 ## Description
 
 > 웹에서 구현된 스티커 메모와 게시판으로 이루어져 있습니다
-> <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-FFCC33?style=flat-square&logo=JavaScript&logoColor=black"/> <img src="https://img.shields.io/badge/MySQL-025E8C?style=flat-square&logo=MySQL&logoColor=white"/> 와  을 사용하였습니다   
+>  와  을 사용하였습니다   
 
 ![sticky-memo-1](https://user-images.githubusercontent.com/52145267/113465248-8940bf00-946d-11eb-9f3d-ea5f5945438c.gif)
 
