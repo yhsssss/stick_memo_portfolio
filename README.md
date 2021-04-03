@@ -7,7 +7,8 @@
 > 웹에서 구현된 스티커 메모와 게시판으로 이루어져 있습니다
 > **Node.js** 와 **MySQL** 을 사용하였습니다   
 
-![sticky-memo](https://user-images.githubusercontent.com/52145267/113465055-2e5a9800-946c-11eb-9f96-dcc4ccf876ae.gif)
+![sticky-memo-1](https://user-images.githubusercontent.com/52145267/113465248-8940bf00-946d-11eb-9f3d-ea5f5945438c.gif)
+
 - **스티커메모** 버튼을 통해 원하는 색상의 스티커 메모를 생성하여 저장 할 수 있습니다 저장된 스티커 메모는 `[수정 - 변경 - 삭제]` 가 가능합니다
 
 ![simple-board](https://user-images.githubusercontent.com/52145267/113465083-5a761900-946c-11eb-850b-9a1108cd8982.gif)
