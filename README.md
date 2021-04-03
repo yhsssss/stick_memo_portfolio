@@ -3,7 +3,7 @@
 **Sticky Memo & Simple Board**   
    
    
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-FFCC33?style=flat-square&logo=JavaScript&logoColor=black"/> <img src="https://img.shields.io/badge/MySQL-025E8C?style=flat-square&logo=MySQL&logoColor=white"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-FFCC33?style=flat-square&logo=JavaScript&logoColor=black"/> <img src="https://img.shields.io/badge/jQuery-FF8135?style=flat-square&logo=jQuery&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/MySQL-025E8C?style=flat-square&logo=MySQL&logoColor=white"/>
 
 ## Description
 
@@ -46,26 +46,26 @@ npm install
 ```
 
 ### :clap: step #2 - Database
-1. `mySQL` 설치 후 `/sql/db_info.sql` 실행\
-2. `/lib/db.js` DB정보 확인\
+1. `mySQL` 설치 후 `/sql/db_info.sql` 실행
+2. `/lib/db.js` DB정보 확인
 3. DB정보 입력
 ```
  let db = mysql.createConnection({
           host : 'localhost',
-          user : 'your infomation',
-          password : 'your infomation',
+          user : 'check your infomation',
+          password : 'check your infomation',
           database : 'myboard'
  }); 
 ```
 
 ### :clap: step #3 - Start the Development Server
 
-Node.js 설치후 버전 확인하기
+1. Node.js 설치후 버전 확인하기
 ```
 node --version
 ```
 
-서버 구동하기 `http://localhost:8660`에서 구동됩니다
+2. 서버 구동하기 `http://localhost:8660`에서 구동됩니다
 ```
 npm start
 ```
