@@ -11,7 +11,7 @@
 
 - **스티커메모** 버튼을 통해 원하는 색상의 스티커 메모를 생성하여 저장 할 수 있습니다 저장된 스티커 메모는 `[수정 - 변경 - 삭제]` 가 가능합니다
 
-![simple-board](https://user-images.githubusercontent.com/52145267/113465083-5a761900-946c-11eb-850b-9a1108cd8982.gif)
+![simple-board-1](https://user-images.githubusercontent.com/52145267/113465401-9c07c380-946e-11eb-8a59-6653ee507ca9.gif)
 - **심플보드** 게시판에서는 
 
 ## Getting Started
