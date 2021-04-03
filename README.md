@@ -46,14 +46,14 @@ npm install
 ```
 
 ### :clap: step #2 - Database
-`mySQL` 설치 후 `/sql/db_info.sql` 실행
-`/lib/db.js` DB정보 확인하기
-
+1. `mySQL` 설치 후 `/sql/db_info.sql` 실행\
+2. `/lib/db.js` DB정보 확인\
+3. DB정보 입력
 ```
  let db = mysql.createConnection({
           host : 'localhost',
-          user : '정보입력',
-          password : '비밀번호 입력',
+          user : 'your infomation',
+          password : 'your infomation',
           database : 'myboard'
  }); 
 ```
